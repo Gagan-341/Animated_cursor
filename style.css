@@ -1,14 +1,3 @@
-/* style.css */
-
-/* body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #111;
-    color: white;
-    font-family: sans-serif;
-} */
-
 body, html {
   margin: 0;
   padding: 0;
@@ -17,7 +6,6 @@ body, html {
   background: black; /* background stays black */
   overflow: hidden;
 }
-
 
 #smokeCanvas {
   position: fixed;
@@ -39,18 +27,6 @@ body, html {
   cursor: pointer;
   pointer-events: auto;
 }
-
-  
-/* .smoke {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(white, transparent);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: fadeOut 1s ease-out forwards;
-    opacity: 0.5;
-} */
   
 @keyframes fadeOut {
     0% {
@@ -62,4 +38,5 @@ body, html {
       opacity: 0;
     }
 }
+
   
