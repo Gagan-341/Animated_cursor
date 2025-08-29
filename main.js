@@ -1,54 +1,3 @@
-// const { app, BrowserWindow } = require('electron');
-// const path = require('path');
-
-// function createWindow() {
-//   const win = new BrowserWindow({
-//     width: 800,
-//     height: 600,
-//     transparent: true,
-//     frame: false,
-//     alwaysOnTop: true,
-//     hasShadow: false,
-//     webPreferences: {
-//       preload: path.join(__dirname, 'preload.js'),
-//       nodeIntegration: true,
-//       contextIsolation: false,
-//     }
-//   });
-
-//   win.setIgnoreMouseEvents(false); // Set to true if you want click-through
-//   win.loadFile('index.html');
-// }
-
-// // Make window click-through when needed
-// const { ipcMain } = require('electron');
-
-// ipcMain.on('toggle-clickthrough', (event, isClickThrough) => {
-//   win.setIgnoreMouseEvents(isClickThrough, { forward: true });
-// });
-
-// app.whenReady().then(() => {
-//   createWindow();
-// });
-
-// const { Tray, Menu } = require('electron');
-
-// let tray = null;
-
-// app.whenReady().then(() => {
-//   tray = new Tray('icon.png'); // You need an icon.png file
-//   const contextMenu = Menu.buildFromTemplate([
-//     { label: 'Toggle Smoke', click: () => {
-//       win.webContents.send('toggle-smoke');
-//     }},
-//     { label: 'Quit', click: () => {
-//       app.quit();
-//     }}
-//   ]);
-//   tray.setToolTip('Smoky Cursor App');
-//   tray.setContextMenu(contextMenu);
-// });
-
 const { app, BrowserWindow, screen, ipcMain } = require('electron');
 
 let win;
@@ -121,3 +70,4 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
