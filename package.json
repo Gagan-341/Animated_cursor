@@ -1,0 +1,15 @@
+{
+  "name": "smoky-cursor-app",
+  "version": "1.0.0",
+  "description": "Smoky Cursor Electron App",
+  "main": "main.js",    
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.0"
+  }
+}
+
